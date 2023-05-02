@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="bmwwg.png"></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Models</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">M-Sport</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script> type="text/javascript">
+      window.addEventListener("scroll", function(){var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    }
+      )
+    </script>
+  <br>
+  <br>
+  <div id="users" class="tablebox">
+    <input class="search" placeholder="Search" />
+    <button class="sort" data-sort="born">
+      Sort by price
+    </button>
+    <button class="filterm">BMW M-Sport</button>
+    <button class="filterel">El</button>
+    <button class="filtersuv">Suv</button>
+
+  <table>
+        <!-- IMPORTANT, class="list" have to be at tbody -->
+        <tbody class="list">
+          <tr>
+            <td class="name">BMW M2 Coupé</td>
+            <td class="born">80000 €</td>
+            <td class="M">BMW M-Sport</td>
+            <td><img class="image" src="m2.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW M3 Sedan</td>
+            <td class="born">105000 €</td>
+            <td class="M">BMW M-Sport</td>
+            <td><img class="image" src="m3.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW M3 Touring</td>
+            <td class="born">125000 €</td>
+            <td class="M">BMW M-Sport</td>
+            <td><img class="image" src="touring.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW M4 Coupé</td>
+            <td class="born">135000 €</td>
+            <td class="M">BMW M-Sport</td>
+            <td><img class="image" src="m4.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW M5 Sedan</td>
+            <td class="born">147000 €</td>
+            <td class="M">BMW M-Sport</td>
+            <td><img class="image" src="m5.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW M8 Competition Gran Coupé</td>
+            <td class="born">184000 €</td>
+            <td class="M">BMW M-Sport</td>
+            <td><img class="image" src="m8.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW X6 M</td>
+            <td class="born">188000 €</td>
+            <td class="Suv">Suv</td>
+            <td><img class="image" src="x6.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW X5 M</td>
+            <td class="born">155000 €</td>
+            <td class="Suv">Suv</td>
+            <td><img class="image" src="abba.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW X4 M</td>
+            <td class="born">135000 €</td>
+            <td class="Suv">Suv</td>
+            <td><img class="image" src="x4mm.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW X3 M</td>
+            <td class="born">125000 €</td>
+            <td class="Suv">Suv</td>
+            <td><img class="image" src="x3a.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW iX</td>
+            <td class="born">75000 €</td>
+            <td class="El">El</td>
+            <td><img class="image" src="ix.webp"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW i4 M50</td>
+            <td class="born">90000 €</td>
+            <td class="El">El</td>
+            <td><img class="image" src="i4.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW i7 M70 xDrive</td>
+            <td class="born">195000 €</td>
+            <td class="El">El</td>
+            <td><img class="image" src="i7.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW iX M60</td>
+            <td class="born">118000 €</td>
+            <td class="El">El</td>
+            <td><img class="image" src="ixm60.png"></td>
+          </tr>
+          <tr>
+            <td class="name">BMW iX3</td>
+            <td class="born">65000 €</td>
+            <td class="El">El</td>
+            <td><img class="image" src="ix3.png"></td>
+          </tr>
+  
+  
+  
+
+        </tbody>
+      </table>
+   <br>
+   <br>
+  </div>
+<div class="content-container">
+  <footer class="bottom-footer">
+      <div class="map-container">
+          <div id="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.3500500584769!2d18.03548067698128!3d59.41055557465373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9c13316220cd%3A0xe36b2344e3cd04d4!2sBavaria%20Danderyd%20BMW!5e0!3m2!1ssv!2sse!4v1683040715134!5m2!1ssv!2sse" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+      <div class="contact-info">
+          <h3>Kontakt Information</h3>
+          <p>Danderydsvägen 142, 182 36 Danderyd</p>
+          <p>Telefon: 08-446 58 50</p>
+          <p>Email: bavariabildanderyd@gmail.com</p>
+      </div>
+  </footer>
+</div>
+  <script src="list.js"></script>
+  <script src="listMain.js"></script>
+
+  </body>
+</html>

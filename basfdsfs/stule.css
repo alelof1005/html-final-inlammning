@@ -1,0 +1,39 @@
+.layout {
+    width: 100%;
+    height: 100%;
+  
+    display: grid;
+    grid:
+      "header header header" auto
+      "leftSide body rightSide" 600px
+      "footer footer footer" auto
+      / 450px 1fr 300px;
+    gap: 8px;
+  }
+  
+  .header { grid-area: header; }
+  .leftSide { grid-area: leftSide; }
+  .bodya    { grid-area: body; }
+  .rightSide { grid-area: rightSide; }
+  .footer { grid-area: footer; }
+
+.header {
+    background-color: aqua;
+}
+
+.leftSide img{
+    max-width: 450px;
+    max-height: 900px;
+}
+
+.bodya {
+    background-color: brown;
+}
+
+footer {
+    background-color: blueviolet;
+}
+
+.rightSide {
+    background-color: olive;
+}

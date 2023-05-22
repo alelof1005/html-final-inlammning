@@ -1,0 +1,419 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+*
+{
+
+   font-family: "poppins", sans-serif;
+   margin: 0px;
+   padding: 0px;
+   
+}
+
+body
+{
+  background: #343f4f;
+  min-height: 100vh;
+
+}
+
+header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+  box-sizing: border-box;
+}   
+
+header.sticky
+{
+  padding: 5px 100px;
+  background: #fff;
+}
+
+
+
+header .logo
+{
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em ;
+  text-transform:uppercase ;
+  letter-spacing: 2px ;
+  transition: 0.6s;
+}
+
+header ul
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li
+{
+  position: relative;
+  list-style: none;
+}
+
+header ul li a
+{
+   position: relative;
+   margin: 0 15px;
+   text-decoration: none;
+   color: #fff;
+   letter-spacing: 2px;
+   font-weight: 500px;
+   transition: 0.6s;
+}
+
+.banner
+{
+   position: relative;
+   width: 100% ;
+   height: 100vh;
+   background: url("images/bmwer.jpg");
+   background-size:cover;
+   box-shadow: 2px 5px #000 ;
+}
+
+header.sticky ul li a
+{
+  color: #000;
+}
+
+
+.list {
+  font-family: "poppins", sans-serif;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #212f34;
+  height:36px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  display:inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:4px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-4px;
+  right:-5px;
+}
+
+.image {
+  max-width: 230px;
+  max-height: 160px;
+  background-color: #fff;
+}
+
+
+.tablebox {
+  float: left;
+  margin-left: 15%;
+}
+
+table {
+  background-color: white;
+  border-collapse: collapse;
+  
+}
+
+tr {
+  display: inline-block;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  margin: 1.5rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+}
+
+table {
+  background: none !important;
+  border: none !important;
+}
+
+td {
+  display: block;
+
+}
+
+tr:hover {
+  transform: scale(1.15);
+  
+}
+
+button:hover{
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+button:focus {
+  outline:none;
+}
+button:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+  
+}
+
+button {
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #212f34;
+  height:36px;
+  
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  color: #333;
+  border-top: 5px solid #000;
+  margin-top: 20px;
+}
+
+.map-container {
+  width: 450px;
+}
+
+.contact-info {
+  width: 50%;
+  text-align: right;
+}
+
+#google-map {
+  height: 300px;
+  width: 450;
+  
+}
+
+
+@media (max-width: 1400px){
+  header {
+    width: 100%;
+  }
+
+  header ul
+{
+  position: relative;
+  display: block;
+}
+.banner{
+  background: url("images/bmwer.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 70vh;
+}
+}
+
+
+@media (max-width: 1000px){
+
+.banner{
+  background: url("images/bmwer.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 50vh;
+}
+.bottom-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-info {
+  margin-top: 20px;
+}
+}
+
+@media (max-width: 600px){
+
+  .banner{
+    background: #6c6363;
+    width: 100%;
+    background-size: cover;
+    height: 350px;
+  }
+
+
+  .google-map iframe {
+    transform: scale(0.8);
+  }
+  .tablebox input button {
+    transform: scale(0.7);
+  }
+  .contact-info {
+    margin: auto;
+  }
+  }
+  
+  @media (max-width: 451px){
+
+    .banner{
+      background:#6c6363;
+      width: 100%;
+      background-size: cover;
+      height: 300px;
+    }
+
+    .google-map{
+      width: 100px;
+    }
+    .map-container {
+      width: 300px;
+      height: 180px;
+      margin: auto;
+      
+    }
+    iframe {
+      width: 300px;
+      height: 180px;
+      
+    }
+    .contact-info {
+      margin: auto;
+      width: 300px;
+      margin-left: 20px;
+    
+
+    
+    }
+    .logo {
+      transform: scale(0.85);
+      position: absolute;
+      right: 70px;
+      bottom: 30px;
+      
+    }
+  
+
+    }
+
+  @media (max-width: 300px){
+
+    .list{
+      width: 300px;
+    }
+    .tablebox {
+      max-width: 300px;
+    }
+    .listcon{
+      max-width: 300px;
+      
+      float: left;
+      /*margin-right: 20%;*/
+    }
+    tr {
+      width: 200px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .image {
+      width: 200px;
+    }
+    .google-map{
+      width: 100px;
+    }
+    .map-container {
+      width: 200px;
+      height: 134px;
+      margin: auto;
+      
+    }
+    iframe {
+      width: 200px;
+      height: 134px;
+      
+    }
+    .contact-info {
+      margin: auto;
+      width: 300px;
+    
+    }
+    .banner {
+      height: 250px;
+      background: #6c6363;
+    }
+    .logo {
+      transform: scale(0.7);
+      position: absolute;
+      right: 90px;
+      bottom: 30px;
+      
+    }
+  }
+  
